@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BDT Ops Desk — Simulated Alexa+</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">Amazon App Dev 2026 · Alexa+ track (simulated)</p>
+        <h1>BDT Ops Desk</h1>
+        <p class="sub">Ask for LinkedIn news, GitHub hygiene, or a daily ops brief.</p>
+      </div>
+      <label class="token">
+        Bearer token
+        <input id="token" type="password" placeholder="optional MCP_AUTH_TOKEN" autocomplete="off" />
+      </label>
+    </header>
+
+    <section class="chips" aria-label="Example phrases">
+      <button type="button" data-phrase="What's in LinkedIn News today?">LinkedIn News</button>
+      <button type="button" data-phrase="How healthy is our GitHub work?">GitHub hygiene</button>
+      <button type="button" data-phrase="Give me my daily ops brief">Daily brief</button>
+    </section>
+
+    <section id="transcript" class="transcript" aria-live="polite"></section>
+
+    <form id="composer">
+      <input id="prompt" type="text" placeholder="Ask Ops Desk…" autocomplete="off" />
+      <button type="submit">Ask</button>
+    </form>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

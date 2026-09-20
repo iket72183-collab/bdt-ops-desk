@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-19T15:00:00-05:00",
+  "source": "fixture",
+  "repos": [
+    {
+      "repo": "iket72183-collab/catholic-daily-scripture",
+      "openPullRequests": [
+        {
+          "number": 42,
+          "title": "Improve daily reading cache",
+          "author": "contributor",
+          "updatedAt": "2026-09-17T10:00:00Z",
+          "draft": false,
+          "url": "https://github.com/iket72183-collab/catholic-daily-scripture/pull/42"
+        }
+      ],
+      "staleIssues": [
+        {
+          "number": 18,
+          "title": "Add offline fallback for readings",
+          "updatedAt": "2026-08-20T12:00:00Z",
+          "url": "https://github.com/iket72183-collab/catholic-daily-scripture/issues/18",
+          "daysStale": 30
+        }
+      ],
+      "failingChecks": [
+        {
+          "name": "ci / test",
+          "conclusion": "failure",
+          "htmlUrl": "https://github.com/iket72183-collab/catholic-daily-scripture/actions/runs/1",
+          "headBranch": "fix/cache"
+        }
+      ]
+    },
+    {
+      "repo": "iket72183-collab/add-me-social-card",
+      "openPullRequests": [],
+      "staleIssues": [
+        {
+          "number": 7,
+          "title": "Export QR share sheet polish",
+          "updatedAt": "2026-08-01T09:00:00Z",
+          "url": "https://github.com/iket72183-collab/add-me-social-card/issues/7",
+          "daysStale": 49
+        }
+      ],
+      "failingChecks": []
+    }
+  ],
+  "summary": {
+    "openPrCount": 1,
+    "staleIssueCount": 2,
+    "failingCheckCount": 1
+  }
+}

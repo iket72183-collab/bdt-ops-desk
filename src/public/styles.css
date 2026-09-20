@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light dark;
+  --bg: #0b1220;
+  --panel: #121a2b;
+  --text: #e8eefc;
+  --muted: #9aaccb;
+  --accent: #ff9900;
+  --alexa: #00a0e3;
+  --user: #24324d;
+  --bot: #1a2740;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #1a2a4a, var(--bg));
+  color: var(--text);
+}
+
+.shell {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  color: var(--alexa);
+  margin: 0 0 0.35rem;
+}
+
+h1 { margin: 0; font-size: 1.8rem; }
+.sub { margin: 0.4rem 0 0; color: var(--muted); }
+
+.token {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.token input, #prompt {
+  background: var(--panel);
+  border: 1px solid #2b3b5c;
+  border-radius: 10px;
+  color: var(--text);
+  padding: 0.65rem 0.8rem;
+  min-width: 220px;
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chips button, #composer button {
+  background: linear-gradient(135deg, var(--accent), #ffb84d);
+  color: #111;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.transcript {
+  flex: 1;
+  background: rgba(18, 26, 43, 0.85);
+  border: 1px solid #24324d;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 360px;
+  overflow-y: auto;
+}
+
+.bubble {
+  max-width: 90%;
+  padding: 0.75rem 0.95rem;
+  border-radius: 14px;
+  white-space: pre-wrap;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+.bubble.user { align-self: flex-end; background: var(--user); }
+.bubble.bot { align-self: flex-start; background: var(--bot); border: 1px solid #2f4268; }
+.bubble .meta { display: block; font-size: 0.75rem; color: var(--muted); margin-bottom: 0.35rem; }
+
+#composer {
+  display: flex;
+  gap: 0.6rem;
+}
+#prompt { flex: 1; }
